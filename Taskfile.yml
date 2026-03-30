@@ -1,6 +1,11 @@
 version: "3"
 
 tasks:
+  build:
+    desc: Build public/index.html from templates/index.template.html and sites.yml
+    cmds:
+      - bash scripts/build.sh
+
   serve:
     desc: Preview the site locally at http://localhost:3000
     preconditions:
